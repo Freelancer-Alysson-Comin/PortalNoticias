@@ -12,10 +12,35 @@ box-sizing: border-box;
     --stroke-color:#1E293B;
     --text-color-primary:#F1F5F9;
     --text-color-secondary:#CBD5E1;
+    --font-family: 'Archivo', sans-serif;
+    --h1: 800 24px/135% var(--font-family);
+    --h2: 800 24px/145% var(--font-family);
+    --h3: 800 24px/145% var(--font-family);
+    --text-spam: 600 14px/145% var(--font-family);
+    --text: 400 16px/140% var(--font-family);
+    --text-small:400 16px/160% var(--font-family);
+
+
 }
 
 /*Aplicando as cores default da página*/
 body{
+    font:var(--text);
     color:var(--text-color-primary);
     background-color: var(--bg-color);
+}
+
+/*Aplica em todas as tags a da página*/
+a{
+    text-decoration: none;/*retira o traço abaixo do link*/
+    color: inherit;/*Isso faz erdar a cor que está no body, setado acima*/
+}
+/*Quando passar o mouse em cima dos links */
+a:hover{
+    color:var(--brand-color-light);
+}
+
+/*Isso faz erdar a fonte que está no body, setado acima no caso do bdoy que é onde está nossos títulos*/
+h1,h2,h3{
+    font:inherit;
 }
