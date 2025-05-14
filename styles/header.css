@@ -1,0 +1,26 @@
+#primary{
+    padding-block: 20px;/*Pega em cima e em baixo o padding*/
+
+    /*o nav está e formato de display grid, e as div dentro dele em dispplay flex, usamos o display flex apenas para centralizar os elementos*/
+    div{
+       display: flex; 
+       align-items: center;
+       gap:8px ;
+    }
+
+    /*nesting css, usado no css moderno, usado para selecionar apenas a segunda div do nav*/
+    div:nth-child(2){
+       margin-inline: auto ;/*pega a margem da esqueda e direta*/
+    }
+    div:nth-child(3){
+      justify-self: end;/*alinha o item dentro da grid*/  
+    }
+}
+
+#secundary{
+    padding-block: 12px;/*padding em cima e baixo*/
+    border: solid 1px var(--stroke-color);/*borda*/
+    border-inline: none;/*retira a borda das laterais*/
+    justify-content: space-between;/*ele separa os itens igualmente, colocar os espaços*/
+
+}
