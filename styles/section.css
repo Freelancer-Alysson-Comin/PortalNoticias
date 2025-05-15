@@ -22,4 +22,17 @@
         );
         
     }
+
+    /*faz o texto informado ficar sobre a imagem*/
+    figcaption{
+       position: absolute; /*faz o texto informado ficar sobre a imagem*/
+       bottom: 0; /*coloca ele no final da imagem*/
+       padding: 24px ;
+    }
+    
+    h2{
+        margin-top: 8px;
+        
+    }
+
 }
