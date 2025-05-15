@@ -1,0 +1,25 @@
+#featured{
+    img{
+        height: 100x;/*Preenche todo o espaço*/
+        object-fit: cover;/*faz a cobertura do espaço total*/
+        border-radius: 4px;
+    }
+}
+/*Faz o degradê da imagem*/
+.card {
+    border-radius: 4x;
+    position: relative;/*respeita o tamaho da div*/
+    overflow: hidden;/*transbordamento-esconda tudo que passar da caixa */
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        top: 50px;
+        background:linear-gradient(
+            180deg,
+            transparent 0%,
+            #020617 100%
+        );
+        
+    }
+}

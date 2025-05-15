@@ -45,20 +45,17 @@ h1,h2,h3{
     font:inherit;
 }
 
+/*Faz a imagem respeitar a caixa que ela está*/
+img{
+    max-width: 100%;
+}
+
 .container{
     max-width: 1280px;/*largura maxima*/
     padding-inline: 32px;/*padding nas laterias*/
     margin-inline:auto ;/*margem em cima e baixa automatica*/
 }
 
-/*Utility-firts*(uma classe que faz apenas uma coisa)
-todas a classes que estão no Html com class="gris" será aplicado o display grid*
-quando colocamos em grid o defalut é fica em block, uma linha em baixo da outra*/
-.grid{
-    display: grid;
-}
-
-/*transforma a grid de linhas para colunas,lá no Html podemos vincular essa classe utilitária*/
-.grid-flow-col{
- grid-auto-flow: column;   
+main{
+    margin-top: 40px;
 }

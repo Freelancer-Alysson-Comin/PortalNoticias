@@ -1,0 +1,21 @@
+
+/*Utility-firts*(uma classe que faz apenas uma coisa)
+todas a classes que estão no Html com class="gris" será aplicado o display grid*
+quando colocamos em grid o defalut é fica em block, uma linha em baixo da outra*/
+.grid{
+    display: grid;
+}
+
+/*transforma a grid de linhas para colunas,lá no Html podemos vincular essa classe utilitária*/
+.grid-flow-col{
+ grid-auto-flow: column;   
+}
+
+/*Faz criar duas colunas na div*/
+.grid-cols-2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.gap-16{
+    gap: 16px;
+}
