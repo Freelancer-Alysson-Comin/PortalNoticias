@@ -28,7 +28,17 @@
        position: absolute; /*faz o texto informado ficar sobre a imagem*/
        bottom: 0; /*coloca ele no final da imagem*/
        padding: 24px ;
+
+       /*seletor que buscas as tag aonde a class tenha a palavra .text-lg*/
+        &:has(.tex-lg){
+        padding: 12px;
     }
+    
+    
+    
+    }
+
+
     
     h2{
         margin-top: 8px;
