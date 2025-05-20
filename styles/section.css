@@ -1,12 +1,37 @@
+/*todo section que tiver header dentro será aplicado isso*/
+section header{
+    border-top: 1px solid var(--stroke-color);
+    padding-block: 12px 24px;/*borda em cima e em baixo*/
+    font: var(--text-spam);
+
+    a{
+        justify-content: end;/*coloca ele no final da linha*/
+        align-items: center;
+        gap: 8px;
+
+        span{
+            background-image: url(../assets/icons/ArrowRight.svg);
+            width: 16px;
+            height: 16px;
+        }
+
+         /*quando passar em cima do elemento spam*/
+        &:hover span{
+        background-image: url(../assets/icons/ArrowRight-hover.svg); 
+        }
+
+    }
+}
+
 #featured{
     img{
         height: 100x;/*Preenche todo o espaço*/
         object-fit: cover;/*faz a cobertura do espaço total*/
         border-radius: 4px;
     }
-}
-/*Faz o degradê da imagem*/
-.card {
+
+    /*Faz o degradê da imagem*/
+    .card {
     border-radius: 4x;
     position: relative;/*respeita o tamaho da div*/
     overflow: hidden;/*transbordamento-esconda tudo que passar da caixa */
@@ -45,4 +70,34 @@
         
     }
 
+}
+}
+
+#weekly{
+/*pega o primeiro nivel da div &>div */
+    &>div{
+        /*coloca 4 colunas com 292 px*/
+      grid-template-columns: repeat(4, 292px);  
+    }
+    grid-template-columns: repeat(4, 292px);
+   
+    img{
+        height: 160px;
+    }
+
+    figure{
+        position: relative;
+
+        .content-tag{
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+
+        p{
+            margin-top: 8px;
+            font-weight: 800;
+        }
+
+    }
 }
