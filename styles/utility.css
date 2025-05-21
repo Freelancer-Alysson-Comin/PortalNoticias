@@ -20,6 +20,11 @@ quando colocamos em grid o defalut é fica em block, uma linha em baixo da outra
     gap: 16px;
 }
 
+.gap-32{
+    gap: 32px;
+}
+
+
 /*texto duas vezes maior*/
 .tex-2xl{
     font: var(--h1);
