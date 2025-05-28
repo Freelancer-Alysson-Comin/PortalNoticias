@@ -133,7 +133,7 @@ aside{
         margin-top: 8px;
     }
     img{
-    width: 72px;
+    width: 90px;
     aspect-ratio: 1/1;/*faz imagem ficar quadrada*/
     object-fit: cover;
 }
