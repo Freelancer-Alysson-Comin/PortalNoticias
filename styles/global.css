@@ -57,8 +57,17 @@ img{
 }
 
 main{
-    margin-top: 40px;
-    gap: 80px/*espaço entre os section usadas*/
+    
+    margin-block: 40px;
+    row-gap: 80px;/*espaço entre os section usadas*/
+    column-gap: 32px;
+    grid-template-columns: 2fr 1.4fr;
+    
+
+    grid-template-areas:/* isso fez criar 3 linhas e duas colunas no minha página, depois do section.css eu coloquei cada uma em class/section/id*/
+    "featured featured"
+    "weekly weekly"
+    "ai aside";
 }
 
 .content-tag{
